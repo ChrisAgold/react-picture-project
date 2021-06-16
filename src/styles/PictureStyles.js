@@ -17,6 +17,12 @@ export const StyledPictureColumns = styled.div`
   flex-direction: column;
   background-color: lightgoldenrodyellow;
   padding: 10px;
+  overflow: scroll;
+  //-webkit-scrollbar {
+  //  display: none;
+  //}
+  //-ms-overflow-style: none;
+  //scrollbar-width: none;
 `;
 
 export const StyledMainPicture = styled.div`
@@ -26,14 +32,27 @@ export const StyledMainPicture = styled.div`
   flex-direction: row;
   background-color: mediumpurple;
   padding: 10px;
+  justify-content: center;
+  align-items: center;
 `
 
 // Inside PictureColumns
 export const IndividualPictureColumn = styled.div`
-  width: 80%;
+  max-width: 80%;
   height: 100%;
   margin: 1rem;
   display: flex;
   flex-direction: column;
-  background-color: darkolivegreen;
+  justify-content: center;
+  align-items: center;
 `
+export const IndividualPictureRow = styled.div`
+  max-width: 80%;
+  height: 100%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+
