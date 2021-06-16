@@ -30,7 +30,7 @@ export const StyledMainPicture = styled.div`
   width: 80%;
   height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: mediumpurple;
   padding: 10px;
   justify-content: center;
@@ -60,12 +60,34 @@ export const IndividualPictureRow = styled.div`
 
 export const StyledButton = styled.div`
   background-color: #4CAF50; /* Green */
-  margin-bottom:2%;
+  margin-bottom:3%;
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 30px;
+`
+
+export const StyledHeading = styled.div`
+  background-color: plum;
+  margin-bottom:10%;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+`
+export const StyledHeadingTwo = styled.div`
+  background-color: plum;
+  margin-bottom:10%;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 40px;
+  float: left;
 `
