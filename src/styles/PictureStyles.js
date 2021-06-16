@@ -46,6 +46,7 @@ export const IndividualPictureColumn = styled.div`
   justify-content: center;
   align-items: center;
 `
+
 export const IndividualPictureRow = styled.div`
   max-width: 80%;
   height: 100%;
@@ -56,3 +57,14 @@ export const IndividualPictureRow = styled.div`
   align-items: center;
 `
 
+export const StyledButton = styled.div`
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  value: press,
+`
