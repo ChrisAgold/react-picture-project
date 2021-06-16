@@ -17,7 +17,8 @@ export const StyledPictureColumns = styled.div`
   flex-direction: column;
   background-color: lightgoldenrodyellow;
   padding: 10px;
-  overflow: scroll;
+  overflow-y: scroll;
+  margin-top: 2rem;
   //-webkit-scrollbar {
   //  display: none;
   //}
@@ -59,6 +60,7 @@ export const IndividualPictureRow = styled.div`
 
 export const StyledButton = styled.div`
   background-color: #4CAF50; /* Green */
+  margin-bottom:2%;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -66,5 +68,4 @@ export const StyledButton = styled.div`
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  value: press,
 `

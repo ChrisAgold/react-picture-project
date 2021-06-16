@@ -22,40 +22,25 @@ function App() {
         <StyledMain>
             {/*COLUMNS*/}
             <StyledPictureColumns>
-                <StyledButton style={{
-                    backgroundColor: '#4CAF50', /* Green */
-                    border: 'none',
-                    color: 'white',
-                    padding: '15px 32px',
-                    textAlign: 'center',
-                    textDecoration: 'none',
-                    display: 'inline-block',
-                    fontSize: '16px',
-                }}>
-                    <button onClick={() => setPicture("FirstPicture")}/>
+                <StyledButton onClick={() => setPicture("FirstPicture")}>
+                    <FontAwesomeIcon icon={faCoffee}/>
                 </StyledButton>
-                <StyledButton>
-                    <button onClick={() => setPicture("SecondPicture")}/>
+                <StyledButton onClick={() => setPicture("SecondPicture")}>
+                    <FontAwesomeIcon icon={faCheese}/>
                 </StyledButton>
-                <StyledButton>
-                    <button onClick={() => setPicture("ThirdPicture")}/>
+                <StyledButton onClick={() => setPicture("ThirdPicture")}>
+                    <FontAwesomeIcon icon={faFish}/>
                 </StyledButton>
+            </StyledPictureColumns>
 
-
-
-                {picture === "FirstPicture" && <MainPictureColumn onClick={() => setPicture("FirstPicture")} title={'A Drink Sir?'} icon={<FontAwesomeIcon icon={faCoffee}/>}/>}
+            {/*MAIN ROW*/}
+            <StyledMainPicture>
+                {picture === "FirstPicture" && <MainPictureColumn onClick={() => setPicture("FirstPicture")} title={'コーヒー'} icon={<FontAwesomeIcon icon={faCoffee}/>}/>}
 
                 {picture === "SecondPicture" &&
                 <MainPictureColumn title={'チーズ'} icon={<FontAwesomeIcon icon={faCheese}/>}/>}
 
                 {picture === "ThirdPicture" && <MainPictureColumn title={'魚'} icon={<FontAwesomeIcon icon={faFish}/>}/>}
-
-            </StyledPictureColumns>
-
-
-            {/*MAIN ROW*/}
-            <StyledMainPicture>
-                <MainPictureRow title={'コーヒー'} icon={<FontAwesomeIcon icon={faCoffee}/>}/>
             </StyledMainPicture>
         </StyledMain>
     );
