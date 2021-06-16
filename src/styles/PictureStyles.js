@@ -35,6 +35,9 @@ export const StyledMainPicture = styled.div`
   padding: 10px;
   justify-content: center;
   align-items: center;
+  background-image: url('https://avante.biz/wp-content/uploads/Anime-Cherry-Blossom/Anime-Cherry-Blossom73.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 `
 
 // Inside PictureColumns
@@ -59,7 +62,7 @@ export const IndividualPictureRow = styled.div`
 `
 
 export const StyledButton = styled.div`
-  background-color: #4CAF50; /* Green */
+  background-color: lightskyblue; /* Green */
   margin-bottom:3%;
   border: none;
   color: white;

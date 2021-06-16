@@ -31,7 +31,7 @@ function App() {
                     <FontAwesomeIcon icon={faCoffee}/>
                 </StyledButton>
                 <StyledButton onClick={() => setPicture("SecondPicture")}>
-                    <FontAwesomeIcon icon={faCheese} />
+                    <FontAwesomeIcon icon={faCheese}/>
                 </StyledButton>
                 <StyledButton onClick={() => setPicture("ThirdPicture")}>
                     <FontAwesomeIcon icon={faFish}/>
@@ -46,14 +46,22 @@ function App() {
                 }}>
                     <StyledHeadingTwo><HeadingTwo/></StyledHeadingTwo>
                 </div>
-                {picture === "FirstPicture" &&
-                <MainPictureColumn onClick={() => setPicture("FirstPicture")} title={'コーヒー'}
-                                   icon={<FontAwesomeIcon icon={faCoffee} style={{fontSize:100}}/>}/>}
 
-                {picture === "SecondPicture" &&
-                <MainPictureColumn title={'チーズ'} icon={<FontAwesomeIcon icon={faCheese} style={{fontSize:100}}/>}/>}
+                <div style={{
+                    backgroundColor: 'plum',
+                    padding: '5rem',
+                }}>
+                    {picture === "FirstPicture" &&
+                    <MainPictureColumn onClick={() => setPicture("FirstPicture")} title={'コーヒー'}
+                                       icon={<FontAwesomeIcon icon={faCoffee} style={{fontSize: 100}}/>}/>}
 
-                {picture === "ThirdPicture" && <MainPictureColumn title={'魚'} icon={<FontAwesomeIcon icon={faFish} style={{fontSize:100}}/>}/>}
+                    {picture === "SecondPicture" &&
+                    <MainPictureColumn title={'チーズ'}
+                                       icon={<FontAwesomeIcon icon={faCheese} style={{fontSize: 100}}/>}/>}
+
+                    {picture === "ThirdPicture" &&
+                    <MainPictureColumn title={'魚'} icon={<FontAwesomeIcon icon={faFish} style={{fontSize: 100}}/>}/>}
+                </div>
             </StyledMainPicture>
         </StyledMain>
     );
