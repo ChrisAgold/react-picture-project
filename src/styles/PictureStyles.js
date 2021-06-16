@@ -1,13 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// Main
+export const StyledMain = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
 export const StyledPictureColumns = styled.div`
   width: 20%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #61dafb;
-
+  background-color: lightgoldenrodyellow;
+  padding: 10px;
 `;
 
 export const StyledMainPicture = styled.div`
@@ -15,14 +24,16 @@ export const StyledMainPicture = styled.div`
   height: 100%;
   display: flex;
   flex-direction: row;
-  background-color: #282c34;
+  background-color: mediumpurple;
   padding: 10px;
 `
 
-export const StyledMain = styled.div`
-width: 100vw;
-height: 100vh;
+// Inside PictureColumns
+export const IndividualPictureColumn = styled.div`
+  width: 80%;
+  height: 100%;
+  margin: 1rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  background-color: darkolivegreen;
 `

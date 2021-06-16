@@ -1,4 +1,6 @@
 import './App.css';
+import React from 'react';
+import { MainPictureColumn } from './Components';
 import {
     StyledPictureColumns,
     StyledMainPicture,
@@ -10,7 +12,7 @@ function App() {
         <StyledMain>
             {/*COLUMNS*/}
             <StyledPictureColumns>
-                HEY KID
+                <MainPictureColumn/>
             </StyledPictureColumns>
 
             {/*MAIN ROW*/}
