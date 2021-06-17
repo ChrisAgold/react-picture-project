@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {MainPictureColumn, MainPictureRow, Heading, HeadingTwo, HeaderList, List} from './Components';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCoffee} from '@fortawesome/free-solid-svg-icons';
@@ -15,9 +15,11 @@ import {
 } from "./styles";
 
 function App() {
+
     const data = require('./data.json')
     // js, set state, manipulate props
     const [picture, setPicture] = useState('')
+
 
     return (
         <StyledMain>
@@ -26,7 +28,7 @@ function App() {
                 {/*Select an item heading*/}
                 <StyledHeading><Heading/></StyledHeading>
                 {/*list of header options: types: [food, alcohol...etc]*/}
-                <HeaderList/>
+                <HeaderList setPicture={setPicture}/>
 
                 {/*<StyledButton onClick={() => setPicture("FirstPicture")}>*/}
                 {/*    <FontAwesomeIcon icon={faCoffee}/>*/}
@@ -51,16 +53,23 @@ function App() {
                     padding: '5rem',
                     borderRadius: '20px',
                 }}>
-                    {picture === "FirstPicture" &&
-                    <MainPictureColumn onClick={() => setPicture("FirstPicture")} title={'コーヒー'}
-                                       icon={<FontAwesomeIcon icon={faCoffee} style={{fontSize: 100}}/>}/>}
 
-                    {picture === "SecondPicture" &&
-                    <MainPictureColumn title={'チーズ'}
-                                       icon={<FontAwesomeIcon icon={faCheese} style={{fontSize: 100}}/>}/>}
+                    {/* State is changed here */}
+                    <MainPictureRow sam={'gaming'} kanji={picture.kanji} title={picture.englishname}>
 
-                    {picture === "ThirdPicture" &&
-                    <MainPictureColumn title={'魚'} icon={<FontAwesomeIcon icon={faFish} style={{fontSize: 100}}/>}/>}
+                    </MainPictureRow>
+
+
+                    {/*{picture === "FirstPicture" &&*/}
+                    {/*<MainPictureColumn onClick={() => setPicture("FirstPicture")} title={'コーヒー'}*/}
+                    {/*                   icon={<FontAwesomeIcon icon={faCoffee} style={{fontSize: 100}}/>}/>}*/}
+
+                    {/*{picture === "SecondPicture" &&*/}
+                    {/*<MainPictureColumn title={'チーズ'}*/}
+                    {/*                   icon={<FontAwesomeIcon icon={faCheese} style={{fontSize: 100}}/>}/>}*/}
+
+                    {/*{picture === "ThirdPicture" &&*/}
+                    {/*<MainPictureColumn title={'魚'} icon={<FontAwesomeIcon icon={faFish} style={{fontSize: 100}}/>}/>}*/}
                 </div>
             </StyledMainPicture>
         </StyledMain>

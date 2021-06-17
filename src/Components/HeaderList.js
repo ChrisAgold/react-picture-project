@@ -6,10 +6,13 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCoffee} from "@fortawesome/free-solid-svg-icons";
 import {List} from "./List";
 
-export const HeaderList = () => {
+export const HeaderList = (props) => {
     const data = require('../data.json');
     const [visible, setVisible] = useState(false);
     const [clickedType, setClickedType] = useState();
+
+    // PROP for setting picture from App.js
+    const setPicture = props.setPicture;
 
     function clickHandler(type) {
         setClickedType(type)
@@ -24,7 +27,7 @@ export const HeaderList = () => {
                             {type}
                         </StyledHeading>
 
-                        {visible && clickedType===type&& <List type={type}/>}
+                        {visible && clickedType===type&& <List setPicture={setPicture} type={type}/>}
                     </>
 
 

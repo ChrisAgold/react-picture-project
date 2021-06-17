@@ -7,10 +7,11 @@ import {
 } from "../styles";
 
 export const MainPictureRow = (props) => {
-
     // js, props, state
     const title = props.title;
     const icon = props.icon;
+    const kanji = props.kanji
+
 
     return (
         <div>
@@ -20,7 +21,11 @@ export const MainPictureRow = (props) => {
                     fontWeight: 'bold',
                     fontSize: '30px'
                 }}>{title}</div>
-
+                <div style={{
+                    marginBottom:'10px',
+                    fontWeight: 'bold',
+                    fontSize: '30px'
+                }}>{kanji}</div>
                 <div style={{
                     fontSize: '40px'
                 }}>{icon}</div>
