@@ -71,6 +71,11 @@ export const StyledButton = styled.div`
   text-decoration: none;
   display: inline-block;
   font-size: 30px;
+  :hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  cursor: pointer;
+  border-radius: 20px;
 `
 
 export const StyledHeading = styled.div`
@@ -83,6 +88,7 @@ export const StyledHeading = styled.div`
   text-decoration: none;
   display: inline-block;
   font-size: 40px;
+  border-radius: 20px;
 `
 export const StyledHeadingTwo = styled.div`
   background-color: plum;
@@ -93,4 +99,5 @@ export const StyledHeadingTwo = styled.div`
   text-decoration: none;
   font-size: 40px;
   float: left;
+  border-radius: 20px;
 `

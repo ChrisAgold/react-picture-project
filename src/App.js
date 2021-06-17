@@ -50,6 +50,7 @@ function App() {
                 <div style={{
                     backgroundColor: 'plum',
                     padding: '5rem',
+                    borderRadius: '20px',
                 }}>
                     {picture === "FirstPicture" &&
                     <MainPictureColumn onClick={() => setPicture("FirstPicture")} title={'コーヒー'}
