@@ -1,6 +1,6 @@
 import './App.css';
 import React, {useState} from 'react';
-import {MainPictureColumn, MainPictureRow, Heading, HeadingTwo, Title, List} from './Components';
+import {MainPictureColumn, MainPictureRow, Heading, HeadingTwo, HeaderList, List} from './Components';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCoffee} from '@fortawesome/free-solid-svg-icons';
 import {faCheese} from '@fortawesome/free-solid-svg-icons';
@@ -20,28 +20,24 @@ function App() {
     const [picture, setPicture] = useState('')
 
     return (
-
         <StyledMain>
             {/*COLUMNS*/}
             <StyledPictureColumns>
-
+                {/*Select an item heading*/}
                 <StyledHeading><Heading/></StyledHeading>
+                {/*list of header options: types: [food, alcohol...etc]*/}
+                <HeaderList/>
 
-                <Title/>
-
-                <List/>
-
-                <StyledButton onClick={() => setPicture("FirstPicture")}>
-                    <FontAwesomeIcon icon={faCoffee}/>
-                </StyledButton>
-                <StyledButton onClick={() => setPicture("SecondPicture")}>
-                    <FontAwesomeIcon icon={faCheese}/>
-                </StyledButton>
-                <StyledButton onClick={() => setPicture("ThirdPicture")}>
-                    <FontAwesomeIcon icon={faFish}/>
-                </StyledButton>
+                {/*<StyledButton onClick={() => setPicture("FirstPicture")}>*/}
+                {/*    <FontAwesomeIcon icon={faCoffee}/>*/}
+                {/*</StyledButton>*/}
+                {/*<StyledButton onClick={() => setPicture("SecondPicture")}>*/}
+                {/*    <FontAwesomeIcon icon={faCheese}/>*/}
+                {/*</StyledButton>*/}
+                {/*<StyledButton onClick={() => setPicture("ThirdPicture")}>*/}
+                {/*    <FontAwesomeIcon icon={faFish}/>*/}
+                {/*</StyledButton>*/}
             </StyledPictureColumns>
-
             {/*MAIN ROW*/}
             <StyledMainPicture>
                 <div style={{
@@ -50,7 +46,6 @@ function App() {
                 }}>
                     <StyledHeadingTwo><HeadingTwo/></StyledHeadingTwo>
                 </div>
-
                 <div style={{
                     backgroundColor: 'plum',
                     padding: '5rem',
