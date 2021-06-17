@@ -1,6 +1,6 @@
 import './App.css';
 import React, {useState} from 'react';
-import {MainPictureColumn, MainPictureRow, Heading, HeadingTwo} from './Components';
+import {MainPictureColumn, MainPictureRow, Heading, HeadingTwo, Title, List} from './Components';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCoffee} from '@fortawesome/free-solid-svg-icons';
 import {faCheese} from '@fortawesome/free-solid-svg-icons';
@@ -14,18 +14,22 @@ import {
     StyledHeadingTwo,
 } from "./styles";
 
-
 function App() {
-
+    const data = require('./data.json')
     // js, set state, manipulate props
     const [picture, setPicture] = useState('')
 
     return (
+
         <StyledMain>
             {/*COLUMNS*/}
             <StyledPictureColumns>
 
                 <StyledHeading><Heading/></StyledHeading>
+
+                <Title/>
+
+                <List/>
 
                 <StyledButton onClick={() => setPicture("FirstPicture")}>
                     <FontAwesomeIcon icon={faCoffee}/>
