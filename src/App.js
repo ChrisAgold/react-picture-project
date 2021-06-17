@@ -1,17 +1,18 @@
 import './App.css';
 import React, {useState, useEffect} from 'react';
-import {MainPictureColumn, MainPictureRow, Heading, HeadingTwo, HeaderList, List} from './Components';
+import {MainPictureColumn, MainPicture, Heading, HeadingTwo, HeaderList, List} from './Components';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCoffee} from '@fortawesome/free-solid-svg-icons';
 import {faCheese} from '@fortawesome/free-solid-svg-icons';
 import {faFish} from '@fortawesome/free-solid-svg-icons';
 import {
-    StyledPictureColumns,
+    StyledSidebar,
     StyledMainPicture,
     StyledMain,
     StyledButton,
     StyledHeading,
     StyledHeadingTwo,
+    StyledRow,
 } from "./styles";
 
 function App() {
@@ -23,55 +24,26 @@ function App() {
 
     return (
         <StyledMain>
-            {/*COLUMNS*/}
-            <StyledPictureColumns>
+            {/*COLUMNS or SIDEBAR-------------------------------------*/}
+            <StyledSidebar>
                 {/*Select an item heading*/}
                 <StyledHeading><Heading/></StyledHeading>
                 {/*list of header options: types: [food, alcohol...etc]*/}
                 <HeaderList setPicture={setPicture}/>
+            </StyledSidebar>
 
-                {/*<StyledButton onClick={() => setPicture("FirstPicture")}>*/}
-                {/*    <FontAwesomeIcon icon={faCoffee}/>*/}
-                {/*</StyledButton>*/}
-                {/*<StyledButton onClick={() => setPicture("SecondPicture")}>*/}
-                {/*    <FontAwesomeIcon icon={faCheese}/>*/}
-                {/*</StyledButton>*/}
-                {/*<StyledButton onClick={() => setPicture("ThirdPicture")}>*/}
-                {/*    <FontAwesomeIcon icon={faFish}/>*/}
-                {/*</StyledButton>*/}
-            </StyledPictureColumns>
-            {/*MAIN ROW*/}
-            <StyledMainPicture>
-                <div style={{
-                    position: 'absolute',
-                    top: '50px',
-                }}>
-                    <StyledHeadingTwo><HeadingTwo/></StyledHeadingTwo>
-                </div>
-                <div style={{
-                    backgroundColor: 'plum',
-                    padding: '5rem',
-                    borderRadius: '20px',
-                }}>
+            {/*MAIN ROW or MAIN PICTURE-------------------------------------*/}
+
 
                     {/* State is changed here */}
-                    <MainPictureRow sam={'gaming'} kanji={picture.kanji} title={picture.englishname}>
+                    <MainPicture
+                        kanji={picture.kanji}
+                        icon={picture.icon}
+                        itemdescription={picture.itemdescription}
+                        price={picture.price}>
+                    </MainPicture>
 
-                    </MainPictureRow>
 
-
-                    {/*{picture === "FirstPicture" &&*/}
-                    {/*<MainPictureColumn onClick={() => setPicture("FirstPicture")} title={'コーヒー'}*/}
-                    {/*                   icon={<FontAwesomeIcon icon={faCoffee} style={{fontSize: 100}}/>}/>}*/}
-
-                    {/*{picture === "SecondPicture" &&*/}
-                    {/*<MainPictureColumn title={'チーズ'}*/}
-                    {/*                   icon={<FontAwesomeIcon icon={faCheese} style={{fontSize: 100}}/>}/>}*/}
-
-                    {/*{picture === "ThirdPicture" &&*/}
-                    {/*<MainPictureColumn title={'魚'} icon={<FontAwesomeIcon icon={faFish} style={{fontSize: 100}}/>}/>}*/}
-                </div>
-            </StyledMainPicture>
         </StyledMain>
     );
 }

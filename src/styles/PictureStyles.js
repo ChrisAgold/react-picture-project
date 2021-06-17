@@ -3,14 +3,13 @@ import styled from 'styled-components';
 
 // Main
 export const StyledMain = styled.div`
-  width: 100vw;
-  height: 100vh;
   display: flex;
+  height:100vh;
   align-items: center;
   justify-content: center;
 `
 
-export const StyledPictureColumns = styled.div`
+export const StyledSidebar = styled.div`
   width: 20%;
   height: 100%;
   display: flex;
@@ -32,8 +31,7 @@ export const StyledMainPicture = styled.div`
   display: flex;
   flex-direction: column;
   background-color: mediumpurple;
-  padding: 10px;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background-image: url('https://avante.biz/wp-content/uploads/Anime-Cherry-Blossom/Anime-Cherry-Blossom73.jpg');
   background-repeat: no-repeat;
@@ -56,6 +54,7 @@ export const IndividualPictureRow = styled.div`
   height: 100%;
   margin: 1rem;
   display: flex;
+  background-color:red;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -90,10 +89,11 @@ export const StyledHeading = styled.div`
   font-size: 40px;
   border-radius: 20px;
 `
-export const StyledHeadingTwo = styled.div`
+export const StyledPictureHeader = styled.div`
   background-color: plum;
-  margin-bottom:10%;
   border: none;
+  width:50%;
+  text-align: center;
   color: white;
   padding: 15px 32px;
   text-decoration: none;
@@ -101,3 +101,20 @@ export const StyledHeadingTwo = styled.div`
   float: left;
   border-radius: 20px;
 `
+export const StyledPictureBody = styled.div`
+  background-color: plum;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 40px;
+  width:50%;
+  text-align: center;
+  float: left;
+  border-radius: 20px;
+`
+
+export const StyledRow = styled.div`
+    justify-content: center;
+  align-items: center;
+    `
