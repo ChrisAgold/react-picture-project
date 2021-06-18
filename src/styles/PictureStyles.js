@@ -14,7 +14,7 @@ export const StyledSidebar = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: lightgoldenrodyellow;
+  background-color: #e2a099;
   padding: 10px;
   overflow-y: scroll;
   margin-top: 2rem;
@@ -30,11 +30,11 @@ export const StyledMainPicture = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: mediumpurple;
+
   justify-content: space-evenly;
   align-items: center;
-  background-image: url('https://avante.biz/wp-content/uploads/Anime-Cherry-Blossom/Anime-Cherry-Blossom73.jpg');
-  background-repeat: no-repeat;
+  background: rgb(255,90,90);
+  background: radial-gradient(circle, rgba(255,90,90,1) 55%, rgba(248,248,255,1) 82%, rgba(255,250,250,1) 87%);
   background-size: cover;
 `
 
@@ -61,15 +61,16 @@ export const IndividualPictureRow = styled.div`
 `
 
 export const StyledButton = styled.div`
-  background-color: lightskyblue; /* Green */
+  background-color: #f0eae0; 
   margin-bottom: 3%;
+  font-weight: bold;
   border: none;
-  color: white;
+  color: #1b2853;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 30px;
+  font-size: 17px;
 
   :hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -83,7 +84,7 @@ export const StyledHeading = styled.div`
   margin-top: 10px;
   margin-bottom: 10px;
   border: none;
-  color: black;
+  color: #1b2853;
   padding: 15px;
   text-align: center;
   text-decoration: none;
@@ -94,28 +95,30 @@ export const StyledHeading = styled.div`
 `
 
 export const StyledPictureHeader = styled.div`
-  background-color: plum;
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(30px);
   border: none;
   width: 50%;
   text-align: center;
-  color: white;
+  color: #e4dfd6;
   padding: 15px 32px;
   text-decoration: none;
   font-size: 40px;
   float: left;
-  border-radius: 20px;
+  border-radius: 50px;
 `
 export const StyledPictureBody = styled.div`
-  background-color: plum;
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(30px);
   border: none;
-  color: white;
+  color: #e4dfd6;
   padding: 15px 32px;
   text-decoration: none;
   font-size: 40px;
   width: 50%;
   text-align: center;
   float: left;
-  border-radius: 20px;
+  border-radius: 50px;
 `
 
 export const StyledRow = styled.div`

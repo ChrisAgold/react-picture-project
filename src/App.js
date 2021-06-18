@@ -27,7 +27,7 @@ function App() {
             {/*COLUMNS or SIDEBAR-------------------------------------*/}
             <StyledSidebar>
                 {/*Select an item heading*/}
-                <StyledHeading><Heading/></StyledHeading>
+                <StyledHeading><Heading /></StyledHeading>
 
                 {/*list of header options: types: [food, alcohol...etc]*/}
                 <HeaderList setPicture={setPicture}/>

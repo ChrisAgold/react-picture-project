@@ -25,7 +25,7 @@ export const HeaderList = (props) => {
             {data.types.map((type) => {
                 const buttonStyle = clickedType !== type ? {
                     backgroundColor: '#dbdbb8'
-                } : !visible? {backgroundColor:'#dbdbb8'}:{backgroundColor: 'plum'}
+                } : !visible? {backgroundColor:'#dbdbb8'}:{backgroundColor: '#f3ce75'}
                 return (<>
                         <StyledHeading key={type} onClick={() => clickHandler(type)} style={buttonStyle}>
                             {type}
