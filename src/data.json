@@ -1,77 +1,77 @@
 {
-  "types": ["food","alcohol","beverage","misc"],
+  "types": ["Food","Alcohol","Beverage","Misc"],
 
   "items": [
     {
       "englishname": "Cheese",
-      "type": "food",
+      "type": "Food",
       "kanji": "チーズ",
       "price": 4.59,
-      "icon": "cheese",
+      "icon": "Cheese",
       "itemdescription": " Dairy product derived from milk and produced in wide ranges of flavors, textures and forms by coagulation of the milk protein casein. It comprises proteins and fat from milk, usually the milk of cows, buffalo, goats, or sheep. During production, the milk is usually acidified and the enzymes of rennet (or bacterial enzymes with similar activity) are added to cause the milk proteins (casein) to coagulate. The solids (curd) are separated from the liquid (whey) and pressed into final form.[1] Some cheeses have aromatic molds on the rind, the outer layer, or throughout. Most cheeses melt at cooking temperature. "
     },
     {
       "englishname": "Coffee",
-      "type": "beverage",
+      "type": "Beverage",
       "kanji": "咖",
       "price": 2.39,
-      "icon": "coffee",
+      "icon": "Coffee",
       "itemdescription": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species. All fruit must be further processed from a raw material—the fruit and seed—into a stable, raw product; un-roasted, green coffee. To process the berries, the seed is separated from the fruit to produce green coffee. Green coffee is then roasted, a process which transforms the raw product (green coffee) into a consumable product (roasted coffee). Roasted coffee is ground into a powder and mixed with water to produce a cup of coffee. "
     },
     {
       "englishname": "Bacon",
-      "type": "food",
+      "type": "Food",
       "kanji": "ベーコン",
       "price": 6.19,
-      "icon": "bacon",
+      "icon": "Bacon",
       "itemdescription": "Bacon is a type of salt-cured pork[1] made from various cuts, typically from the pork belly or from the less fatty back cuts. It is eaten on its own, as a side dish (particularly in breakfasts), or used as a minor ingredient to flavour dishes (e.g., the club sandwich). Bacon is also used for barding and larding roasts, especially game, including venison and pheasant, and may also be used to insulate or flavour roast joints by being layered onto the meat. The word is derived from the Old High German Bahho, meaning buttock, ham or side of bacon, and is cognate with the Old French bacon.[2][3] It may also be distantly cognate with modern German Bauch, meaning abdomen, belly "
     },
     {
       "englishname": "Wine",
-      "type": "alcohol",
+      "type": "Alcohol",
       "kanji": "ワイン",
       "price": 18.09,
-      "icon": "wine-bottle",
+      "icon": "Wine-bottle",
       "itemdescription": "Wine is an alcoholic drink typically made from fermented grapes. Yeast consumes the sugar in the grapes and converts it to ethanol, carbon dioxide and heat. Different varieties of grapes and strains of yeasts are major factors in different styles of wine. These differences result from the complex interactions between the biochemical development of the grape, the reactions involved in fermentation, the grape's growing environment (terroir), and the wine production process. Many countries enact legal appellations intended to define styles and qualities of wine. These typically restrict the geographical origin and permitted varieties of grapes, as well as other aspects of wine production. Wines not made from grapes involve fermentation of additional crops, including rice wine and other fruit wines such as plum, cherry, pomegranate, currant and elderberry. "
     },
     {
       "englishname": "Apple",
-      "type": "food",
+      "type": "Food",
       "kanji": "りんご",
       "price": 0.99,
-      "icon": "apple-alt",
+      "icon": "Apple-alt",
       "itemdescription": "An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition.  "
     },
     {
       "englishname": "Pepper",
-      "type": "food",
+      "type": "Food",
       "kanji": "楜",
       "price": 0.19,
-      "icon": "pepper-hot",
+      "icon": "Pepper-hot",
       "itemdescription": "The chili pepper (also chile, chile pepper, chilli pepper, or chilli[3]), from Nahuatl chīlli, is the berry-fruit of plants from the genus Capsicum which are members of the nightshade family, Solanaceae.[4] Chili peppers are widely used in many cuisines as a spice to add pungent 'heat' to dishes. Capsaicin and related compounds known as capsaicinoids are the substances giving chili peppers their intensity when ingested or applied topically."
     },
     {
       "englishname": "Beer",
-      "type": "alcohol",
+      "type": "Alcohol",
       "kanji": "啤",
       "price": 5.19,
-      "icon": "beer",
+      "icon": "Beer",
       "itemdescription": "Beer is one of the oldest and most widely consumed alcoholic drinks in the world, and the third most popular drink overall after water and tea. Beer is brewed from cereal grains—most commonly from malted barley, though wheat, maize (corn), rice, and oats are also used. During the brewing process, fermentation of the starch sugars in the wort produces ethanol and carbonation in the resulting beer.[6] Most modern beer is brewed with hops, which add bitterness and other flavours and act as a natural preservative and stabilizing agent. Other flavouring agents such as gruit, herbs, or fruits may be included or used instead of hops. In commercial brewing, the natural carbonation effect is often removed during processing and replaced with forced carbonation."
     },
     {
       "englishname": "Love",
-      "type": "misc",
+      "type": "Misc",
       "kanji": "愛",
       "price": 0.00,
-      "icon": "heart",
+      "icon": "Heart",
       "itemdescription": "Love encompasses a range of strong and positive emotional and mental states, from the most sublime virtue or good habit, the deepest interpersonal affection, to the simplest pleasure.[1][2] An example of this range of meanings is that the love of a mother differs from the love of a spouse, which differs from the love of food. Most commonly, love refers to a feeling of strong attraction and emotional attachment"
     },
     {
       "englishname": "Stamp",
-      "type": "misc",
+      "type": "Misc",
       "kanji": "印",
       "price": 1.15,
-      "icon": "stamp",
+      "icon": "Stamp",
       "itemdescription": "Rubber stamping, also called stamping, is a craft in which some type of ink made of dye or pigment is applied to an image or pattern that has been carved, molded, laser engraved or vulcanized, onto a sheet of rubber. The rubber is often mounted onto a more stable object such as a wood, brick or an acrylic block. Increasingly the vulcanized rubber image with an adhesive foam backing is attached to a cling vinyl sheet which allows it to be used with an acrylic handle for support. These cling rubber stamps can be stored in a smaller amount of space and typically cost less than the wood mounted versions. They can also be positioned with a greater amount of accuracy due to the stamper's ability to see through the handle being used. Temporary stamps with simple designs can be carved from a potato. The ink-coated rubber stamp is pressed onto any type of medium such that the colored image is transferred to the medium. The medium is generally some type of fabric or paper. Other media used are wood, metal, glass, plastic, and rock. High-volume batik uses liquid wax instead of ink on a metal stamp. "
     }
   ]

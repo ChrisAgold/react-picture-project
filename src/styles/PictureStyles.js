@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // Main
 export const StyledMain = styled.div`
   display: flex;
-  height:100vh;
+  height: 100vh;
   align-items: center;
   justify-content: center;
 `
@@ -54,7 +54,7 @@ export const IndividualPictureRow = styled.div`
   height: 100%;
   margin: 1rem;
   display: flex;
-  background-color:red;
+  background-color: red;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -62,7 +62,7 @@ export const IndividualPictureRow = styled.div`
 
 export const StyledButton = styled.div`
   background-color: lightskyblue; /* Green */
-  margin-bottom:3%;
+  margin-bottom: 3%;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -70,30 +70,33 @@ export const StyledButton = styled.div`
   text-decoration: none;
   display: inline-block;
   font-size: 30px;
+
   :hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
+
   cursor: pointer;
   border-radius: 20px;
 `
 
 export const StyledHeading = styled.div`
-  background-color: plum;
-  margin-bottom:10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border: none;
-  color: white;
-  padding: 15px 32px;
+  color: black;
+  padding: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 35px;
-  border-radius: 20px;
+  font-size: 20px;
+  border-radius: 50px;
+  font-weight: bold;
 `
 
 export const StyledPictureHeader = styled.div`
   background-color: plum;
   border: none;
-  width:50%;
+  width: 50%;
   text-align: center;
   color: white;
   padding: 15px 32px;
@@ -109,13 +112,22 @@ export const StyledPictureBody = styled.div`
   padding: 15px 32px;
   text-decoration: none;
   font-size: 40px;
-  width:50%;
+  width: 50%;
   text-align: center;
   float: left;
   border-radius: 20px;
 `
 
 export const StyledRow = styled.div`
-    justify-content: center;
+  justify-content: center;
   align-items: center;
-    `
+`
+
+// export const StyledCat = styled.div`
+// background-image: url('https://media3.giphy.com/media/E1aQoM7X5uObdhImS3/200.webp?cid=ecf05e47iskrpko856vzvmeew5yo3xy8z3x7fndyx9341psq&rid=200.webp&ct=g');
+//   width: 100%;
+//   height: 100%;
+//   background-repeat: no-repeat;
+//  margin-left: 2rem;
+//   overflow-y: scroll;
+// `

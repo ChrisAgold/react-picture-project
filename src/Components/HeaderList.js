@@ -19,15 +19,19 @@ export const HeaderList = (props) => {
         setVisible(!visible)
     }
 
+
     return (
         <>
             {data.types.map((type) => {
+                const buttonStyle = clickedType !== type ? {
+                    backgroundColor: '#dbdbb8'
+                } : !visible? {backgroundColor:'#dbdbb8'}:{backgroundColor: 'plum'}
                 return (<>
-                        <StyledHeading key={type} onClick={()=>clickHandler(type)}>
+                        <StyledHeading key={type} onClick={() => clickHandler(type)} style={buttonStyle}>
                             {type}
                         </StyledHeading>
 
-                        {visible && clickedType===type&& <List setPicture={setPicture} type={type}/>}
+                        {visible && clickedType === type && <List setPicture={setPicture} type={type}/>}
                     </>
 
 
