@@ -28,6 +28,7 @@ function App() {
             <StyledSidebar>
                 {/*Select an item heading*/}
                 <StyledHeading><Heading /></StyledHeading>
+                <StyledHeadingTwo><HeadingTwo /></StyledHeadingTwo>
                 {/*list of header options: types: [food, alcohol...etc]*/}
                 <HeaderList setPicture={setPicture}/>
                 {/*<StyledCat><Cat/></StyledCat>*/}

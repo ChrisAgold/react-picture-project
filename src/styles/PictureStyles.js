@@ -94,6 +94,19 @@ export const StyledHeading = styled.div`
   font-weight: bold;
 `
 
+export const StyledHeadingTwo = styled.div`
+
+  border: none;
+  color: #1b2853;
+  padding-bottom: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 50px;
+  font-weight: bold;
+`
+
 export const StyledPictureHeader = styled.div`
   background: rgba(0,0,0,0.2);
   backdrop-filter: blur(30px);
