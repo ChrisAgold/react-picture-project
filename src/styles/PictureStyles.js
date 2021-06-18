@@ -86,9 +86,10 @@ export const StyledHeading = styled.div`
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 40px;
+  font-size: 35px;
   border-radius: 20px;
 `
+
 export const StyledPictureHeader = styled.div`
   background-color: plum;
   border: none;

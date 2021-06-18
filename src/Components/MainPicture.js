@@ -16,11 +16,13 @@ export const MainPicture = (props) => {
 
     return (
         <StyledMainPicture>
-            <StyledPictureHeader>
+            {kanji&&icon ?<StyledPictureHeader>
                 {kanji}
-            </StyledPictureHeader>
+            </StyledPictureHeader>:<StyledPictureHeader>
+                Select an option...
+            </StyledPictureHeader>}
 
-            <StyledPictureBody>
+            {itemdescription&&<StyledPictureBody>
                 <div style={{
                     fontSize: '40px',
                 }}>{icon}</div>
@@ -37,8 +39,7 @@ export const MainPicture = (props) => {
                     fontWeight: 'bold',
                     fontSize: '20px'
                 }}>{itemdescription}</div>
-            </StyledPictureBody>
-
+            </StyledPictureBody>}
 
             {/*<div style={{*/}
             {/*    marginBottom: '10px',*/}
@@ -46,7 +47,7 @@ export const MainPicture = (props) => {
             {/*    fontSize: '30px'*/}
             {/*}}>{icon}</div>*/}
 
-            </StyledMainPicture>
+        </StyledMainPicture>
     )
 }
 

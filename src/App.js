@@ -21,7 +21,6 @@ function App() {
     // js, set state, manipulate props
     const [picture, setPicture] = useState('')
 
-
     return (
         <StyledMain>
             {/*COLUMNS or SIDEBAR-------------------------------------*/}
@@ -31,18 +30,16 @@ function App() {
                 {/*list of header options: types: [food, alcohol...etc]*/}
                 <HeaderList setPicture={setPicture}/>
             </StyledSidebar>
-
             {/*MAIN ROW or MAIN PICTURE-------------------------------------*/}
 
+            {/* State is changed here */}
 
-                    {/* State is changed here */}
-                    <MainPicture
-                        kanji={picture.kanji}
-                        icon={picture.icon}
-                        itemdescription={picture.itemdescription}
-                        price={picture.price}>
-                    </MainPicture>
-
+            <MainPicture
+                kanji={picture.kanji}
+                icon={picture.icon}
+                itemdescription={picture.itemdescription}
+                price={picture.price}>
+            </MainPicture>
 
         </StyledMain>
     );

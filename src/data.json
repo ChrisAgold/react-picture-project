@@ -1,6 +1,6 @@
 {
   "types": ["food","alcohol","beverage","misc"],
-  
+
   "items": [
     {
       "englishname": "Cheese",
