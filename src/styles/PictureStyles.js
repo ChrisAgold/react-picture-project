@@ -126,6 +126,12 @@ export const StyledRow = styled.div`
   align-items: center;
 `
 
+export const StyledCardImage = styled.div`
+  max-width: 100%;
+  height: auto;
+`
+
+
 // export const StyledCat = styled.div`
 // background-image: url('https://media3.giphy.com/media/E1aQoM7X5uObdhImS3/200.webp?cid=ecf05e47iskrpko856vzvmeew5yo3xy8z3x7fndyx9341psq&rid=200.webp&ct=g');
 //   width: 100%;

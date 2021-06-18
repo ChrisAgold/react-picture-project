@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faCoffee} from '@fortawesome/free-solid-svg-icons'
 import {
     StyledPictureColumns,
-    IndividualPictureRow, StyledPictureHeader, StyledPictureBody, StyledMainPicture, StyledMain
+    IndividualPictureRow, StyledPictureHeader, StyledPictureBody, StyledMainPicture, StyledMain, StyledCardImage
 } from "../styles";
 
 export const MainPicture = (props) => {
@@ -19,13 +19,15 @@ export const MainPicture = (props) => {
             {kanji&&icon ?<StyledPictureHeader>
                 {kanji}
             </StyledPictureHeader>:<StyledPictureHeader>
-                Select an option...
+                Select a category on the left...
             </StyledPictureHeader>}
 
             {itemdescription&&<StyledPictureBody>
                 <div style={{
-                    fontSize: '40px',
-                }}><img src={icon}/></div>
+                    width: 'auto',
+                    textAlign: 'center',
+                    padding: '15px',
+                }}><img src={icon} style={{width: '300px'}}/></div>
 
                 <div style={{
                     marginBottom: '10px',
