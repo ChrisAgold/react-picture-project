@@ -28,14 +28,11 @@ function App() {
             <StyledSidebar>
                 {/*Select an item heading*/}
                 <StyledHeading><Heading /></StyledHeading>
-
                 {/*list of header options: types: [food, alcohol...etc]*/}
                 <HeaderList setPicture={setPicture}/>
                 {/*<StyledCat><Cat/></StyledCat>*/}
             </StyledSidebar>
-
             {/*MAIN ROW or MAIN PICTURE-------------------------------------*/}
-
             {/* State is changed here */}
             <MainPicture
                 kanji={picture.kanji}
@@ -43,7 +40,6 @@ function App() {
                 itemdescription={picture.itemdescription}
                 price={picture.price}>
             </MainPicture>
-
         </StyledMain>
     );
 }

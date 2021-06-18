@@ -30,11 +30,11 @@ export const StyledMainPicture = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-
   justify-content: space-evenly;
   align-items: center;
-  background: rgb(255,90,90);
-  background: radial-gradient(circle, rgba(255,90,90,1) 55%, rgba(248,248,255,1) 82%, rgba(255,250,250,1) 87%);
+  //background: rgb(255,90,90);
+  //background: radial-gradient(circle, rgba(255,90,90,1) 55%, rgba(248,248,255,1) 82%, rgba(255,250,250,1) 87%);
+  background-image: url('https://images3.alphacoders.com/593/thumb-1920-593270.jpg');
   background-size: cover;
 `
 

@@ -25,7 +25,7 @@ export const MainPicture = (props) => {
             {itemdescription&&<StyledPictureBody>
                 <div style={{
                     fontSize: '40px',
-                }}>{icon}</div>
+                }}><img src={icon}/></div>
 
                 <div style={{
                     marginBottom: '10px',

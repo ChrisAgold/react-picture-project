@@ -7,7 +7,7 @@
       "type": "Food",
       "kanji": "チーズ",
       "price": 4.59,
-      "icon": "Cheese",
+      "icon": "../images/fish.jpeg",
       "itemdescription": " Dairy product derived from milk and produced in wide ranges of flavors, textures and forms by coagulation of the milk protein casein. It comprises proteins and fat from milk, usually the milk of cows, buffalo, goats, or sheep. During production, the milk is usually acidified and the enzymes of rennet (or bacterial enzymes with similar activity) are added to cause the milk proteins (casein) to coagulate. The solids (curd) are separated from the liquid (whey) and pressed into final form.[1] Some cheeses have aromatic molds on the rind, the outer layer, or throughout. Most cheeses melt at cooking temperature. "
     },
     {
