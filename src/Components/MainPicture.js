@@ -25,7 +25,7 @@ export const MainPicture = (props) => {
                     width: 'auto',
                     textAlign: 'center',
                     padding: '15px',
-                }}><img src={icon} style={{width: '300px'}} alt="image"/></div>
+                }}><img src={icon} style={{width: '300px'}} alt="icon"/></div>
 
                 <div style={{
                     marginBottom: '10px',

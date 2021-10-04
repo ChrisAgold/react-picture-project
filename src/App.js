@@ -11,7 +11,7 @@ import {
 
 function App() {
 
-    const data = require('./data.json')
+    // const data = require('./data.json')
     // js, set state, manipulate props
     const [picture, setPicture] = useState('')
 
