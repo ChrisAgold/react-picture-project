@@ -1,9 +1,7 @@
 import React, {useState} from 'react';
-import styled from 'styled-components';
-import {StyledHeading, StyledPictureColumns} from "../styles";
-import {MainPictureColumn} from "./PictureColumn";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCoffee} from "@fortawesome/free-solid-svg-icons";
+
+import {StyledHeading} from "../styles";
+
 import {List} from "./List";
 
 export const HeaderList = (props) => {

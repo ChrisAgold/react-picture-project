@@ -1,9 +1,7 @@
-import React, {useState, useEffect} from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faCoffee} from '@fortawesome/free-solid-svg-icons'
+import React from 'react';
+
 import {
-    StyledPictureColumns,
-    IndividualPictureRow, StyledPictureHeader, StyledPictureBody, StyledMainPicture, StyledMain, StyledCardImage
+StyledPictureHeader, StyledPictureBody, StyledMainPicture,
 } from "../styles";
 
 export const MainPicture = (props) => {

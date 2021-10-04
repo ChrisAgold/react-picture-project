@@ -1,8 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
-import {StyledButton, StyledHeading, StyledPictureColumns} from "../styles";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCoffee} from "@fortawesome/free-solid-svg-icons";
+
+import {StyledButton} from "../styles";
+
 
 
 

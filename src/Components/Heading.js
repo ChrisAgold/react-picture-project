@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+
 
 export const Heading = () => {
     return (<div style={{fontSize: '25px'}}>こんにちは!</div>)
