@@ -31,23 +31,8 @@ export const HeaderList = (props) => {
 
                         {visible && clickedType === type && <List setPicture={setPicture} type={type}/>}
                     </>
-
-
                 );
             })}
         </>
     );
-}
-{/*<a onClick={() => setPicture("FirstPicture")}>*/
-}
-{/*    */
-}
-{/*</a>*/
-}
-
-{/*{picture === "FirstPicture" &&*/
-}
-{/*<MainPictureColumn onClick={() => setPicture("FirstPicture")} title={'コーヒー'}*/
-}
-{/*                   icon={<FontAwesomeIcon icon={faCoffee}/>}/>}*/
 }

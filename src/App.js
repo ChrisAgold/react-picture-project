@@ -1,6 +1,6 @@
 import './App.css';
-import React, {useState, useEffect} from 'react';
-import {MainPictureColumn, MainPicture, Heading, HeadingTwo, HeaderList} from './Components';
+import React, {useState} from 'react';
+import {MainPicture, Heading, HeadingTwo, HeaderList} from './Components';
 
 import {
     StyledSidebar,

@@ -6,7 +6,7 @@ StyledPictureHeader, StyledPictureBody, StyledMainPicture,
 
 export const MainPicture = (props) => {
     // js, props, state
-    const title = props.title;
+    // const title = props.title;
     const kanji = props.kanji;
     const price = props.price;
     const itemdescription = props.itemdescription;
@@ -25,7 +25,7 @@ export const MainPicture = (props) => {
                     width: 'auto',
                     textAlign: 'center',
                     padding: '15px',
-                }}><img src={icon} style={{width: '300px'}}/></div>
+                }}><img src={icon} style={{width: '300px'}} alt="image"/></div>
 
                 <div style={{
                     marginBottom: '10px',
