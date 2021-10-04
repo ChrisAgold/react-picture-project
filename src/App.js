@@ -1,19 +1,12 @@
 import './App.css';
 import React, {useState, useEffect} from 'react';
-import {MainPictureColumn, MainPicture, Heading, HeadingTwo, HeaderList, List, Cat} from './Components';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCoffee} from '@fortawesome/free-solid-svg-icons';
-import {faCheese} from '@fortawesome/free-solid-svg-icons';
-import {faFish} from '@fortawesome/free-solid-svg-icons';
+import {MainPictureColumn, MainPicture, Heading, HeadingTwo, HeaderList} from './Components';
+
 import {
     StyledSidebar,
-    StyledMainPicture,
     StyledMain,
-    StyledButton,
     StyledHeading,
     StyledHeadingTwo,
-    StyledRow,
-    StyledCat,
 } from "./styles";
 
 function App() {
